@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<PoliceReportData>
+    <user id ="1">
+	  <name>Данил</name>
+      <login>client</login>
+      <password>rewfsd</password>
+      <email>client1@gmail.com</email>
+    </user>
+    
+    <user id = "2">
+		<name>Михаил Иванов</name>
+      <login>user</login>
+      <password>user</password>
+      <email>user@user.com</email>
+    </user>
+    
+    <user id ="3">
+	  <name>Иван Набоков</name>
+      <login>user23423</login>
+      <password>dsgfoj134</password>
+      <email>user314@asfd.com</email>
+    </user>
+    
+    <admin>
+      <login></login>
+      <password></password>
+    </admin>
+    
+    <PoliceMan>
+		<name></name>
+      <login></login>
+      <password></password>
+    </PoliceMan>
+    
+    <report>
+      <NumberPoliceSite></NumberPoliceSite>
+      <RequestTime> </RequestTime>
+      <Content></Content>
+    </report>
+	
+    <report id="1">
+      <NumberPoliceSite>20010</NumberPoliceSite>
+      <RequestTime>11:30</RequestTime>
+      <Content>Здравствуйте, тест</Content>
+    </report>
+</PoliceReportData>
+
+
