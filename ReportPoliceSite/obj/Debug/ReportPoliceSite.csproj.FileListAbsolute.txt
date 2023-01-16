@@ -1,4 +1,3 @@
-C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MainWindow.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\Registration.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\App.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\ReportPoliceSite_MarkupCompile.cache
@@ -12,7 +11,6 @@ C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Material
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\App.baml
-C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MainWindow.baml
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\Registration.baml
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\ReportPoliceSite.g.resources
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\ReportPoliceSite.Properties.Resources.resources
@@ -27,3 +25,21 @@ C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\Log
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\HomeNews.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\HomeNews.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\Header.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\Header.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MessageAuth.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MessageAuth.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MakeReportView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\MakeReportView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Magnum.dll
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Magnum.xml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Newtonsoft.Json.xml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserReportsView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserReportsView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminListOfUsers.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminListOfUsers.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminView.baml

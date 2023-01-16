@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ReportPoliceSite.View.UserReportsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ReportPoliceSite.View"
+             xmlns:viewModel="clr-namespace:ReportPoliceSite.ViewModel" d:DataContext="{d:DesignInstance Type=viewModel:UserReportsViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800">
+    <Grid Background="Lavender" Height="800">
+        <ListView Name="ReportOfUser" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding RequestTime}" Width="200">Номер заявления</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding RequestTime}" Width="200">Дата обращения</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding SelectedSite}" Width="200">Выбранный участок</GridViewColumn>
+                    <GridViewColumn Width="200">Содержимое</GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="ReportPoliceSite.View.MakeReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ReportPoliceSite.View"
+             xmlns:viewModel="clr-namespace:ReportPoliceSite.ViewModel" d:DataContext="{d:DesignInstance Type=viewModel:MakeReportViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="800">
+    <Grid>
+        <Border  MinWidth="400" MaxWidth="700" Margin="15, -35, 15, 0" VerticalAlignment="Center" Background="AliceBlue" MinHeight="450" CornerRadius="40" Grid.ColumnSpan="2">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="Black" ShadowDepth="0"/>
+            </Border.Effect>
+
+            <StackPanel>
+                <TextBlock Text="Панель создания заявления" Margin="20, 30, 0, 0" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" />
+                <StackPanel Margin="40, 30, 20, 0">
+                    <Label FontSize="20" Height="40" Width="450" HorizontalAlignment="Left" Content="Выбор полицейского участка"/>
+                    <ComboBox Name="PoliseSiteList" SelectedValue="{Binding Report.NumberPoliceSite}" Height="45" Width="450" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                        <ComboBoxItem IsSelected="True">Участковый пункт полиции №1 Ставрополь</ComboBoxItem>
+                        <ComboBoxItem>Участковый пункт полиции №2 Ставрополь</ComboBoxItem>
+                        <ComboBoxItem>Участковый пункт полиции №3 Ставрополь</ComboBoxItem>
+                        <ComboBoxItem>Участковый пункт полиции №5 Ставрополь</ComboBoxItem>
+                        <ComboBoxItem>Участковый пункт полиции №6 Ставрополь</ComboBoxItem>
+                    </ComboBox>
+                    <Label FontSize="20" Height="40" Width="450" Margin="0, 10, 0, 0" HorizontalAlignment="Left" Content="Номер телефона для обратной связи"/>
+                    <TextBox Height="38" Text="{Binding Report.PhoneNumber, UpdateSourceTrigger=PropertyChanged}" FontSize="24" Width="350" HorizontalAlignment="Left"/>
+                    <Label FontSize="20" Height="40" Width="450" HorizontalAlignment="Left" Content="Место события (Регион)"/>
+                    <ComboBox Name="RegionList" SelectedValue="{Binding Report.SelectedRegion}" Height="45" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                        <ComboBoxItem IsSelected="True">Ставрополь</ComboBoxItem>
+                        <ComboBoxItem>Москва</ComboBoxItem>
+                        <ComboBoxItem>Ростов-на-Дону</ComboBoxItem>
+                        <ComboBoxItem>Краснодар</ComboBoxItem>
+                        <ComboBoxItem>Сочи</ComboBoxItem>
+                        <ComboBoxItem>Чечня</ComboBoxItem>
+                    </ComboBox>
+                    <Label FontSize="20" Height="40" Width="450" Margin="0, 20, 0, 0" HorizontalAlignment="Left" Content="Текст обращения"/>
+                    <ScrollViewer Margin="20, 30, 20, 0">
+                        <TextBox Text="{Binding Report.Content, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" FontSize="20" Height="150" Width="560" Style="{StaticResource MaterialDesignTextBox}"></TextBox>
+                    </ScrollViewer>
+                </StackPanel>
+
+                <Button HorizontalAlignment="Center" Command="{Binding GenerateReportCommand}" CommandParameter="{}" FontSize="30" Margin="68,25,68,20"  Height="50" Content="Отправить заявление" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
+    
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

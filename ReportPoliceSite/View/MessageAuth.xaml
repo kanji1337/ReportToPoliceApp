@@ -1,0 +1,13 @@
+﻿<Window x:Class="ReportPoliceSite.View.MessageAuth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReportPoliceSite.View"
+        mc:Ignorable="d"
+        Title="MessageAuth" Height="220" Width="300" Background="#272537"
+        >
+    <Grid>
+        <Button Width="230" Height="50" HorizontalContentAlignment="Center" FontSize="16" Content="Ваши Данные совпадают" IsDefault="True" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
+    </Grid>
+</Window>

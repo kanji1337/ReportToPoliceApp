@@ -1,6 +1,8 @@
 ﻿namespace ReportPoliceSite.ViewModel
 {
-    public class HomeViewModel
+    public class HomeViewModel : BaseViewModel
     {
+        public HomeViewModel() {
+        }
     }
 }

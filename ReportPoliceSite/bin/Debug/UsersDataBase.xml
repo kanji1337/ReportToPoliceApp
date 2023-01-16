@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Role>User</Role>
+    <ID>0</ID>
+    <Name>Danil Malko</Name>
+    <Login>user</Login>
+    <Password>user</Password>
+    <Email>danil2143@google.com</Email>
+  </User>
+  <User>
+    <Role>User</Role>
+    <ID>1</ID>
+    <Name>Набокова Екатерина</Name>
+    <Login>ekaterinaKEKWLOL</Login>
+    <Password>ekaterina325314</Password>
+    <Email>ekaterinaKEKWLOL@gmail.com</Email>
+  </User>
+  <User>
+    <Role>User</Role>
+    <ID>2</ID>
+    <Name>Артуров Артур</Name>
+    <Login>Artur23532</Login>
+    <Password>Artuewt3214</Password>
+    <Email>Artur23532@gmail.com</Email>
+  </User>
+</ArrayOfUser>

@@ -1,57 +1,138 @@
-﻿using System.Xml.Linq;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using ReportPoliceSite.Model;
+using System.Windows.Controls;
+using System.Xml.Linq;
+using System;
 using System.Windows;
-using System.Collections.ObjectModel;
+using System.Linq;
+using ReportPoliceSite.View;
+using ReportPoliceSite.ViewModel;
 
 namespace ReportPoliceSite.ViewModel
 {
+
     public class LoginViewModel : BaseViewModel
     {
-        public User user;
-        public User UserAuthInfo
+        static Core Core;
+        public User User { get; set; }
+        public LoginViewModel() 
         {
-            get { return user; }
-            set
-            {
-                user = value;
-                OnPropertyChanged("User");
-            }
+            Core = new Core();
+            User = new User();
+            Core.LoadFromDB();
         }
 
-        protected void GetUser()
+        private void Auth(object obj)
         {
-            XDocument xdoc = XDocument.Load("DataBase.xml");
-            XElement PoliceReportData = xdoc.Element("PoliceReportData");
-            if (PoliceReportData != null) 
-            {
-                foreach (XElement user in PoliceReportData.Elements("user"))
-                {
-                    XAttribute name = user.Attribute("name");
-                    XElement login = user.Element("login");
-                    XElement password = user.Element("password");
+            var passwordBox = obj as PasswordBox;
+            if (passwordBox == null) { return; }
+            var password = passwordBox.Password;
 
-                    MessageBox.Show($"Person: {login?.Value} Password: {password?.Value}");
+
+            void GetUserAuth(XElement db)
+            {
+                foreach (XElement user in db.Elements("User"))
+                {
+                    XElement login = user.Element("Login");
+                    string loginS = (String)login;
+                    XElement pass = user.Element("Password");
+                    string passS = (String)pass;
+                    if ((User.Login == loginS) || (password == passS))
+                    {
+                        XElement name = user.Element("Name");
+                        string nameS = (String)name;
+                        User.Name = nameS;
+
+                        UserView user_view = new UserView();
+                        UserViewModel dataContext = new UserViewModel(Core, user_view.Close, User);
+                        user_view.DataContext = dataContext;
+                        user_view.Show();
+                    }
                 }
             }
+
+            void GetAdminAuth(XElement db)
+            {
+                foreach (XElement admin in db.Elements("Admin"))
+                {
+                    XElement login = admin.Element("Login");
+                    string loginS = (String)login;
+                    XElement pass = admin.Element("Password");
+                    string passS = (String)pass;
+                    if ((User.Login == loginS) || (password == passS))
+                    {
+
+                    }
+                }
+            }
+
+            void GetPoliceAuth(XElement db)
+            {
+                foreach (XElement police in db.Elements("PoliceMan"))
+                {
+                    XElement login = police.Element("Login");
+                    string loginS = (String)login;
+                    XElement pass = police.Element("Password");
+                    string passS = (String)pass;
+                    if ((User.Login == loginS) || (password == passS))
+                    {
+
+                    }
+                }
+            }
+
+            void GetUserAuthInfo()
+            {
+                XDocument xdoc = XDocument.Load("UsersDataBase.xml");
+                XElement db = xdoc.Element("ArrayOfUser");
+                if (db != null)
+                {
+                    GetAdminAuth(db);
+                    GetUserAuth(db);
+                    GetPoliceAuth(db);
+                }
+            }
+            GetUserAuthInfo();
         }
-        private ICommand login_Click;
-        public ICommand Login_Click
+
+
+        public ICommand AuthCommand
+        {
+            get
+            {   
+                return new RelayCommand((obj) =>
+                {
+                    Auth(obj);
+                });
+            }
+        }
+
+        private ICommand regCommand;
+
+        public ICommand RegCommand
         {
             get
             {
-                if (login_Click == null)
+                if (regCommand == null)
                 {
-                    login_Click = new RelayCommand(PerformLogin_Click);}
-        
-                return login_Click;
+                    regCommand = new RelayCommand(Reg);
+                }
+
+                return regCommand;
             }
         }
 
-        public void PerformLogin_Click(object parametr)
+        private void Reg(object commandParameter)
         {
-            GetUser();
-        } 
+            Registration reg_view = new Registration();
+            RegistrationViewModel dataContext = new RegistrationViewModel(Core, reg_view.Close);
+            reg_view.DataContext = dataContext;
+            reg_view.Show();
+        }
+        ~LoginViewModel() 
+        {
+            Core.SaveToFileData();  
+        }
     }
 }
 

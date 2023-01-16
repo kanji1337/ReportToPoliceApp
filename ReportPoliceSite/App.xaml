@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:view="clr-namespace:ReportPoliceSite.View"
              xmlns:viewModel="clr-namespace:ReportPoliceSite.ViewModel"
-             StartupUri="View/MainWindow.xaml">
+             StartupUri="View/Login.xaml">
+    
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -12,7 +13,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
             </ResourceDictionary.MergedDictionaries>
-
+            
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeNews/>
             </DataTemplate>
@@ -21,9 +22,24 @@
                 <view:Login/>
             </DataTemplate>
 
+
             <DataTemplate DataType="{x:Type viewModel:RegistrationViewModel}">
                 <view:Registration/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+                <view:UserView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MakeReportViewModel}">
+                <view:MakeReportView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserReportsViewModel}">
+                <view:UserReportsView/>
+            </DataTemplate>
+            
+            
 
         </ResourceDictionary> 
     </Application.Resources>

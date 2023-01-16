@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReportPoliceSite.Model
 {
-    class Admin
+    class Admin : User
     {
-        public string Login { get; set; }
-        public string Password { get; set; }
-
-        Admin(string login, string password)
-        {
-            this.Login = login;
-            this.Password = password;
-        }
     }
 }

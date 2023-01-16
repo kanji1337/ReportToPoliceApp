@@ -6,17 +6,8 @@ using System.Threading.Tasks;
 
 namespace ReportPoliceSite.Model
 {
-    class Police
+    class Police : User
     {
-        public string Name { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
 
-        public Police(string login, string password, string name)
-        {
-            this.Name = name;
-            this.Login = login;
-            this.Password = password;
-        }
     }
 }
