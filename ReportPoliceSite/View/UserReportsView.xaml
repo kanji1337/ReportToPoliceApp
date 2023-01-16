@@ -8,15 +8,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="800">
     <Grid Background="Lavender" Height="800">
-        <ListView Name="ReportOfUser" >
+        <ListView ItemsSource="{Binding Items}" HorizontalAlignment="Left" HorizontalContentAlignment="Left">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding RequestTime}" Width="200">Номер заявления</GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding RequestTime}" Width="200">Дата обращения</GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding SelectedSite}" Width="200">Выбранный участок</GridViewColumn>
-                    <GridViewColumn Width="200">Содержимое</GridViewColumn>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Номер заявления" DisplayMemberBinding="{Binding ID}" ></GridViewColumn>
+                        <GridViewColumn Header="Дата обращения" DisplayMemberBinding="{Binding RequestTime}" Width="200"></GridViewColumn>
+                        <GridViewColumn Header="Выбранный участок" DisplayMemberBinding="{Binding NumberPoliceSite}" Width="200"></GridViewColumn>
+                        <GridViewColumn Header="Содержимое" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Просмотреть"  VerticalAlignment="Center" Margin="20, 0, 0, 0" Width="120" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView.Columns>
                 </GridView>
             </ListView.View>
-        </ListView>
+        </ListView> 
     </Grid>
 </UserControl>

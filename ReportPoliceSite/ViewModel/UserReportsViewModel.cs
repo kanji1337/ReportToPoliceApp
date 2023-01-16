@@ -4,11 +4,14 @@ using ReportPoliceSite.View;
 using System.Xml.Linq;
 using System;
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace ReportPoliceSite.ViewModel
 {
     public class UserReportsViewModel : BaseViewModel
     {
+        private readonly ItemHandler _itemHandler;
+
         static Core Core;
         public Report Report { get; set; }
 
@@ -33,7 +36,7 @@ namespace ReportPoliceSite.ViewModel
             }
         }
 
-        public void GetEveryReportOfUser(int UserID, ObservableCollection<UserReports> items)
+        public void GetEveryReportOfUser(int UserID, ItemHandler _ItemHandler)
         {
             XDocument xdoc = XDocument.Load("ReportsDataBase.xml");
             XElement db = xdoc.Element("ArrayOfReport");
@@ -51,67 +54,51 @@ namespace ReportPoliceSite.ViewModel
                     DateTime req_timeD = (DateTime)req_time;
                     if (UserID == user_idI)
                     {
-                        items.Add(new UserReports() { ReportID = idI, SelectedSite = num_siteS, RequestTime = req_timeD });
-                        ReportID = idI;
-                        SelectedSite = num_siteS;
-                        RequestTime = req_timeD;
+                        _ItemHandler.Add(new Item(idI, num_siteS, req_timeD));
                     }
+                    
                 }
             }
         }
 
-        private int _ReportID;
-
-        public int ReportID
-        {
-            get { return _ReportID; }
-            set
-            {
-                _ReportID = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private string _SelectedSite;
-
-        public string SelectedSite
-        {
-            get { return _SelectedSite; }
-            set
-            {
-                _SelectedSite = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private DateTime _RequestTime;
-
-        public DateTime RequestTime
-        {
-            get { return _RequestTime; }
-            set
-            {
-                _RequestTime = value;
-                OnPropertyChanged();
-            }
-        }
-
-
-        public class UserReports
-        { 
-            public int ReportID { get; set; }
-            public string SelectedSite { get; set; }
-            public DateTime RequestTime { get; set; }
-        }
-
         public UserReportsViewModel(User user)
         {
-            ObservableCollection<UserReports> items = new ObservableCollection<UserReports>();
+            _itemHandler = new ItemHandler();
             Core = new Core();
-            Report = new Report();
-            Core.LoadReportsFromDB();
             GetUserAuthID(user);
-            GetEveryReportOfUser(IDForReport, items);
+            GetEveryReportOfUser(IDForReport, _itemHandler);
+        }
+        public List<Item> Items
+        {
+            get { return _itemHandler.Items; }
+        }
+    }
+    public class Item
+    {
+        public Item(int _ID, string _NumberPoliceSite, DateTime _RequestTime)
+        {
+            ID = _ID;
+            NumberPoliceSite = _NumberPoliceSite;
+            RequestTime = _RequestTime;
+        }
+
+        public int ID { get; set; }
+        public string NumberPoliceSite { get; set; }
+        public DateTime RequestTime { get; set; }
+    }
+
+    public class ItemHandler
+    {
+        public ItemHandler()
+        {
+            Items = new List<Item>();
+        }
+
+        public List<Item> Items { get; private set; }
+
+        public void Add(Item item)
+        {
+            Items.Add(item);
         }
     }
 }

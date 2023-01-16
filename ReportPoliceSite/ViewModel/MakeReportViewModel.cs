@@ -57,11 +57,14 @@ namespace ReportPoliceSite.ViewModel
         private void MakeReport(object commandParameter)
         {
             if ((String)Report.Content != null
-                && (Int64)Report.PhoneNumber != 0
+                && (Int64)Report.PhoneNumber != 7
                 && (String)Report.NumberPoliceSite != null
                 && (String)Report.SelectedRegion != null)
             {
                 Core.LoadReportsFromDB();
+                string s = Report.Content;
+                string[] part = s.Split(':');
+                Report.Content = part[1];
                 Report.RequestUserId = IDForReport;
                 Report.ID = Core.Reports.Count;
                 DateTime date = DateTime.Now;

@@ -38,8 +38,6 @@
             <DataTemplate DataType="{x:Type viewModel:UserReportsViewModel}">
                 <view:UserReportsView/>
             </DataTemplate>
-            
-            
 
         </ResourceDictionary> 
     </Application.Resources>
