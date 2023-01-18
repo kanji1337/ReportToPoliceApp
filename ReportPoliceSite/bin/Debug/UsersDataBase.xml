@@ -24,4 +24,20 @@
     <Password>Artuewt3214</Password>
     <Email>Artur23532@gmail.com</Email>
   </User>
+  <User>
+    <Role>Admin</Role>
+    <ID>3</ID>
+    <Name>Админ</Name>
+    <Login>admin</Login>
+    <Password>admin</Password>
+    <Email>admin@gmail.com</Email>
+  </User>
+  <User>
+    <Role>PoliceMan</Role>
+    <ID>4</ID>
+    <Name>Петров Иван</Name>
+    <Login>police</Login>
+    <Password>police</Password>
+    <Email>police@gmail.com</Email>
+  </User>
 </ArrayOfUser>

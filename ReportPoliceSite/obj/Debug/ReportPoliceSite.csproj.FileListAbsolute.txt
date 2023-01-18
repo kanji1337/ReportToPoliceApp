@@ -40,6 +40,10 @@ C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\bin\Debug\Newtonso
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserReportsView.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\UserReportsView.baml
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminListOfUsers.g.cs
-C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminView.g.cs
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminListOfUsers.baml
-C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\PoliceManView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\PoliceManView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminManView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\AdminManView.baml
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\PoliceReportsView.g.cs
+C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\obj\Debug\View\PoliceReportsView.baml

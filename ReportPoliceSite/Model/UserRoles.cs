@@ -10,6 +10,6 @@ namespace ReportPoliceSite.Model
     { 
         User,
         PoliceMan,
-        admin
+        Admin
     }
 }

@@ -39,6 +39,18 @@
                 <view:UserReportsView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:AdminViewModel}">
+                <view:AdminManView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PoliceViewModel}">
+                <view:PoliceManView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PoliceReportsViewModel}">
+                <view:PoliceReportsView/>
+            </DataTemplate>
+
         </ResourceDictionary> 
     </Application.Resources>
 </Application>

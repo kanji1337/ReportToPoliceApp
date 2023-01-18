@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\App.xaml
-102143799270
+1223140208
 
-30177006119
+34727265836
 201612208644
-View\AdminListOfUsers.xaml;View\AdminView.xaml;View\Header.xaml;View\HomeNews.xaml;View\MakeReportView.xaml;View\UserReportsView.xaml;View\UserView.xaml;View\Login.xaml;View\MessageAuth.xaml;View\Registration.xaml;
+View\AdminListOfUsers.xaml;View\AdminManView.xaml;View\Header.xaml;View\HomeNews.xaml;View\MakeReportView.xaml;View\PoliceManView.xaml;View\PoliceReportsView.xaml;View\UserReportsView.xaml;View\UserView.xaml;View\Login.xaml;View\MessageAuth.xaml;View\Registration.xaml;
 
 False
 

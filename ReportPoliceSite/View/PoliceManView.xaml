@@ -1,0 +1,43 @@
+﻿<Window x:Class="ReportPoliceSite.View.PoliceManView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReportPoliceSite.View" xmlns:viewmodel="clr-namespace:ReportPoliceSite.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:PoliceViewModel}"
+        mc:Ignorable="d"
+        Title="PoliceManView" Height="950" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid x:Name="layoutGrid" Background="#272537">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" MinWidth="100" Margin="0,20,20,0" VerticalAlignment="Top"  MaxWidth="950"  Grid.ColumnSpan="4">
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="133*" />
+                    <ColumnDefinition Width="155*"/>
+                    <ColumnDefinition Width="180*"/>
+                    <ColumnDefinition Width="156*"/>
+                    <ColumnDefinition Width="156*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Полицейский" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" FontSize="18" ></TextBlock>
+                <TextBlock Text="{Binding PoliceName}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20" ></TextBlock>
+                <Button IsEnabled="True" Command="{Binding HomeViewCommand}" Height="Auto" FontSize="20" Style="{StaticResource MaterialDesignOutlinedLightButton}" Grid.Column="1">
+                    <TextBlock TextAlignment="Center">Главная</TextBlock>
+                </Button>
+                <Button IsEnabled="True" Command="{Binding ViewReportsCommand}" Height="Auto"   Grid.Column="2" FontSize="20" Style="{StaticResource MaterialDesignOutlinedLightButton}" Margin="1,0,0,0">
+                    <TextBlock TextAlignment="Center" >Список <LineBreak/>заявлений</TextBlock>
+                </Button>
+                <Button IsEnabled="True" Command="{Binding ExitUserCommand}" Height="Auto"  Grid.Column="4" FontSize="20" Style="{StaticResource MaterialDesignOutlinedLightButton}">
+                    <TextBlock TextAlignment="Center">Выйти</TextBlock>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <ContentControl Grid.Row="1" Grid.Column="0" Margin="40, 0, 40, 40" Content="{Binding CurrentView}"/>
+    </Grid>
+</Window>

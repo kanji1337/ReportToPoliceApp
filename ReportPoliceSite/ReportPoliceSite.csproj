@@ -86,6 +86,8 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\MakeReportViewModel.cs" />
+    <Compile Include="ViewModel\PoliceReportsViewModel.cs" />
+    <Compile Include="ViewModel\PoliceViewModel.cs" />
     <Compile Include="ViewModel\UserReportsViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
     <Compile Include="ViewModel\RegistrationViewModel.cs" />
@@ -94,8 +96,8 @@
     <Compile Include="View\AdminListOfUsers.xaml.cs">
       <DependentUpon>AdminListOfUsers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AdminView.xaml.cs">
-      <DependentUpon>AdminView.xaml</DependentUpon>
+    <Compile Include="View\AdminManView.xaml.cs">
+      <DependentUpon>AdminManView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
@@ -112,6 +114,12 @@
     <Compile Include="View\MessageAuth.xaml.cs">
       <DependentUpon>MessageAuth.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\PoliceManView.xaml.cs">
+      <DependentUpon>PoliceManView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PoliceReportsView.xaml.cs">
+      <DependentUpon>PoliceReportsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
@@ -119,7 +127,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AdminView.xaml">
+    <Page Include="View\AdminManView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,6 +140,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MakeReportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PoliceManView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PoliceReportsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,9 +209,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Model\DataBase.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\IMG\news1.png" />

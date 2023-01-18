@@ -1,10 +1,12 @@
 ﻿
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\App.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\AdminListOfUsers.xaml;;
-FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\AdminView.xaml;;
+FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\AdminManView.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\Header.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\HomeNews.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\MakeReportView.xaml;;
+FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\PoliceManView.xaml;;
+FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\PoliceReportsView.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\UserReportsView.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\UserView.xaml;;
 FC:\Users\danil\source\repos\ReportPoliceSite\ReportPoliceSite\View\Login.xaml;;

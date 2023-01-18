@@ -1,129 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Report>
-    <ID>0</ID>
+    <ID>16</ID>
+    <Status>В рассмотрении</Status>
     <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79034401555</PhoneNumber>
-    <RequestTime>2023-01-16T06:40:30.335279+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте</Content>
+    <NumberPoliceSite> Участковый пункт полиции №5 Ставрополь</NumberPoliceSite>
+    <PhoneNumber>4534234</PhoneNumber>
+    <RequestTime>2023-01-18T09:24:14.9448944+03:00</RequestTime>
+    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ростов-на-Дону</SelectedRegion>
+    <Content>sdfsdf</Content>
   </Report>
   <Report>
     <ID>1</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №6 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79882341420</PhoneNumber>
-    <RequestTime>2023-01-16T06:45:17.1059975+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Москва</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело по признакам преступления, предусмотренного ч. 1 ст. 158 УК РФ (кража). В соответствии с требованиями ч. 2 ст. 145 УПК РФ о принятом решении прошу мне (заявителю) сообщить.</Content>
-  </Report>
-  <Report>
-    <ID>2</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №6 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79882341420</PhoneNumber>
-    <RequestTime>2023-01-16T06:45:17.1059975+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Москва</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело по признакам преступления, предусмотренного ч. 1 ст. 158 УК РФ (кража). В соответствии с требованиями ч. 2 ст. 145 УПК РФ о принятом решении прошу мне (заявителю) сообщить.</Content>
-  </Report>
-  <Report>
-    <ID>3</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №6 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79882341420</PhoneNumber>
-    <RequestTime>2023-01-16T06:45:17.1059975+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Москва</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело по признакам преступления, предусмотренного ч. 1 ст. 158 УК РФ (кража). В соответствии с требованиями ч. 2 ст. 145 УПК РФ о принятом решении прошу мне (заявителю) сообщить.</Content>
-  </Report>
-  <Report>
-    <ID>4</ID>
-    <RequestUserId>2</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №2 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79882341402</PhoneNumber>
-    <RequestTime>2023-01-16T06:59:28.3535321+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело по признакам преступления №1</Content>
-  </Report>
-  <Report>
-    <ID>5</ID>
-    <RequestUserId>2</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №2 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79882341402</PhoneNumber>
-    <RequestTime>2023-01-16T06:59:28.3535321+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело по признакам преступления №2</Content>
-  </Report>
-  <Report>
-    <ID>7</ID>
+    <Status>В рассмотрении</Status>
     <RequestUserId>1</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79885608890</PhoneNumber>
-    <RequestTime>2023-01-16T07:12:49.3265681+03:00</RequestTime>
+    <NumberPoliceSite> Участковый пункт полиции №3 Ставрополь</NumberPoliceSite>
+    <PhoneNumber>79023432456</PhoneNumber>
+    <RequestTime>2023-01-18T11:32:21.6457415+03:00</RequestTime>
     <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте. Меня избили в вузе</Content>
-  </Report>
-  <Report>
-    <ID>8</ID>
-    <RequestUserId>1</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79885608890</PhoneNumber>
-    <RequestTime>2023-01-16T07:12:49.3265681+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте. Меня избили в вузе</Content>
-  </Report>
-  <Report>
-    <ID>9</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79034401555</PhoneNumber>
-    <RequestTime>2023-01-16T07:15:19.7467949+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте 9</Content>
-  </Report>
-  <Report>
-    <ID>10</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79034401555</PhoneNumber>
-    <RequestTime>2023-01-16T07:15:19.7467949+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте 9</Content>
-  </Report>
-  <Report>
-    <ID>11</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79034401555</PhoneNumber>
-    <RequestTime>2023-01-16T07:21:21.9156921+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте 10</Content>
-  </Report>
-  <Report>
-    <ID>12</ID>
-    <RequestUserId>0</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79034401555</PhoneNumber>
-    <RequestTime>2023-01-16T07:21:29.333269+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Здравствуйте 111</Content>
-  </Report>
-  <Report>
-    <ID>13</ID>
-    <RequestUserId>1</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №2 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79885608890</PhoneNumber>
-    <RequestTime>2023-01-16T07:55:46.9803803+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело</Content>
-  </Report>
-  <Report>
-    <ID>14</ID>
-    <RequestUserId>1</RequestUserId>
-    <NumberPoliceSite>Участковый пункт полиции №2 Ставрополь</NumberPoliceSite>
-    <PhoneNumber>79885608890</PhoneNumber>
-    <RequestTime>2023-01-16T07:55:51.1432146+03:00</RequestTime>
-    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
-    <Content>Прошу зарегистрировать мое заявление о преступлении и возбудить уголовное дело</Content>
+    <Content>Здравствуйте, у меня украли сумку</Content>
   </Report>
 </ArrayOfReport>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReportPoliceSite.Model
 {
-    class Police : User
+    public partial class Police : User
     {
 
     }

@@ -52,11 +52,12 @@ namespace ReportPoliceSite.ViewModel
                     string num_siteS = (String)num_site;
                     XElement req_time = report.Element("RequestTime");
                     DateTime req_timeD = (DateTime)req_time;
+                    string status = "В рассмотрении";
                     if (UserID == user_idI)
                     {
-                        _ItemHandler.Add(new Item(idI, num_siteS, req_timeD));
+                        _ItemHandler.Add(new Item(idI, num_siteS, req_timeD, status));
                     }
-                    
+
                 }
             }
         }
@@ -75,13 +76,14 @@ namespace ReportPoliceSite.ViewModel
     }
     public class Item
     {
-        public Item(int _ID, string _NumberPoliceSite, DateTime _RequestTime)
+        public Item(int _ID, string _NumberPoliceSite, DateTime _RequestTime, string _Status)
         {
+            Status = _Status;
             ID = _ID;
             NumberPoliceSite = _NumberPoliceSite;
             RequestTime = _RequestTime;
         }
-
+        public string Status { get; set; }
         public int ID { get; set; }
         public string NumberPoliceSite { get; set; }
         public DateTime RequestTime { get; set; }

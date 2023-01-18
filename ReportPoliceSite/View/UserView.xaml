@@ -26,6 +26,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
+                <TextBlock Text="Пользователь" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" FontSize="18" ></TextBlock>
                 <TextBlock Text="{Binding UserName}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20" ></TextBlock>
                 <Button IsEnabled="True" Command="{Binding HomeViewCommand}" Height="80"  Grid.Column="1" FontSize="20" Style="{StaticResource MaterialDesignOutlinedLightButton}">
                     <TextBlock TextAlignment="Center">Главная</TextBlock>

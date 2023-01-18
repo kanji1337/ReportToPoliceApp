@@ -9,6 +9,7 @@ namespace ReportPoliceSite.Model
     public partial class Report
     {
         public int ID { get; set; }
+        public string Status { get; set; }
         public int RequestUserId { get; set; }
         public string NumberPoliceSite { get; set; }
         public Int64 PhoneNumber { get; set; }

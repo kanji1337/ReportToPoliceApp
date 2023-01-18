@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ReportPoliceSite.View
 {
     /// <summary>
-    /// Логика взаимодействия для AdminView.xaml
+    /// Логика взаимодействия для PoliceManView.xaml
     /// </summary>
-    public partial class AdminView : Page
+    public partial class PoliceManView : Window
     {
-        public AdminView()
+        public PoliceManView()
         {
             InitializeComponent();
         }

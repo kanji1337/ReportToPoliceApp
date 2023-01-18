@@ -62,9 +62,10 @@ namespace ReportPoliceSite.ViewModel
                 && (String)Report.SelectedRegion != null)
             {
                 Core.LoadReportsFromDB();
-                string s = Report.Content;
+                string s = Report.NumberPoliceSite;
                 string[] part = s.Split(':');
-                Report.Content = part[1];
+                Report.NumberPoliceSite = part[1];
+                Report.Status = "В рассмотрении";
                 Report.RequestUserId = IDForReport;
                 Report.ID = Core.Reports.Count;
                 DateTime date = DateTime.Now;
