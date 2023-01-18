@@ -40,4 +40,12 @@
     <Password>police</Password>
     <Email>police@gmail.com</Email>
   </User>
+  <User>
+    <Role>User</Role>
+    <ID>5</ID>
+    <Name>Малько Данил</Name>
+    <Login>danil12414</Login>
+    <Password>dgvsonfvdafo124</Password>
+    <Email>danil12414@gmail.com</Email>
+  </User>
 </ArrayOfUser>

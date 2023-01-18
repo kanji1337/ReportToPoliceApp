@@ -7,15 +7,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="800">
     <Grid Background="Lavender" Height="800">
-        <ListView ItemsSource="{Binding Items}" HorizontalAlignment="Left" HorizontalContentAlignment="Left">
+        <ListView ItemsSource="{Binding Items}" HorizontalAlignment="Center" HorizontalContentAlignment="Center" >
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                        <GridViewColumn Header="Номер" Width="110"  DisplayMemberBinding="{Binding ID}" ></GridViewColumn>
-                        <GridViewColumn Header="Дата обращения" DisplayMemberBinding="{Binding RequestTime}" Width="150"></GridViewColumn>
-                        <GridViewColumn Header="Номер участка" DisplayMemberBinding="{Binding Name}" Width="280"></GridViewColumn>
-                        <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding Status}" Width="120">
-
+                        <GridViewColumn Header="Номер заявления" Width="180"  DisplayMemberBinding="{Binding PID}" ></GridViewColumn>
+                        <GridViewColumn Header="Дата обращения" DisplayMemberBinding="{Binding PRequestTime}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Фамилия Имя" DisplayMemberBinding="{Binding PName}" Width="180"></GridViewColumn>
+                        <GridViewColumn Header="Телефон" DisplayMemberBinding="{Binding PhoneNumber}" Width="120"></GridViewColumn>
+                        <GridViewColumn Header="Статус"  Width="Auto">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ComboBox Width="Auto" MinWidth="140" SelectedValue="{Binding Report.PStatus}"  SelectedIndex="0">
+                                        <ComboBoxItem IsSelected="True">В рассмотрении</ComboBoxItem>
+                                        <ComboBoxItem>Обрабатывается</ComboBoxItem>
+                                        <ComboBoxItem>Выполняется</ComboBoxItem>
+                                        <ComboBoxItem>Завершено</ComboBoxItem>
+                                    </ComboBox>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                         <GridViewColumn Header="Содержимое" Width="160">
                             <GridViewColumn.CellTemplate>
@@ -28,6 +38,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Сохранить изменение" Margin="0, 0, 10, 10"></Button>
+        <Button Command="{Binding SaveReports}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Сохранить изменение" Margin="0, 0, 10, 10"></Button>
     </Grid>
 </UserControl>

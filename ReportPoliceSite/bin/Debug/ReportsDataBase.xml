@@ -20,4 +20,24 @@
     <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
     <Content>Здравствуйте, у меня украли сумку</Content>
   </Report>
+  <Report>
+    <ID>2</ID>
+    <Status>В рассмотрении</Status>
+    <RequestUserId>0</RequestUserId>
+    <NumberPoliceSite> Участковый пункт полиции №2 Ставрополь</NumberPoliceSite>
+    <PhoneNumber>790344014555</PhoneNumber>
+    <RequestTime>2023-01-18T15:26:58.7050885+03:00</RequestTime>
+    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Москва</SelectedRegion>
+    <Content>Здравствуйте</Content>
+  </Report>
+  <Report>
+    <ID>3</ID>
+    <Status>В рассмотрении</Status>
+    <RequestUserId>0</RequestUserId>
+    <NumberPoliceSite> Участковый пункт полиции №1 Ставрополь</NumberPoliceSite>
+    <PhoneNumber>79034401555</PhoneNumber>
+    <RequestTime>2023-01-18T16:57:57.9806583+03:00</RequestTime>
+    <SelectedRegion>System.Windows.Controls.ComboBoxItem: Ставрополь</SelectedRegion>
+    <Content>Hello world</Content>
+  </Report>
 </ArrayOfReport>

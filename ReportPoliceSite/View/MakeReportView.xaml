@@ -40,9 +40,8 @@
                         <TextBox Text="{Binding Report.Content, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" FontSize="20" Height="150" Width="560" Style="{StaticResource MaterialDesignTextBox}"></TextBox>
                     </ScrollViewer>
                 </StackPanel>
+                <Button Command="{Binding GenerateReportCommand}" CommandParameter="" FontSize="30"  Height="50" Content="Отправить заявление" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
 
-                <Button HorizontalAlignment="Center" Command="{Binding GenerateReportCommand}" CommandParameter="{}" FontSize="30" Margin="68,25,68,20"  Height="50" Content="Отправить заявление" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
-    
             </StackPanel>
         </Border>
     </Grid>
